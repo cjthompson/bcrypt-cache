@@ -1,6 +1,11 @@
 "use strict";
 
+const BcryptCache = require('./lib/bcrypt-cache');
+const MemoryCache = require('./lib/memory-cache');
+const RedisCache = require('./lib/redis-cache');
+
 module.exports = {
-  RedisBcryptCache: require('./lib/redis-cache'),
-  MemoryBcryptCache: require('./lib/memory-cache')
+  BcryptCache,
+  RedisCache,
+  MemoryCache
 };
