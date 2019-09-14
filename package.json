@@ -6,6 +6,9 @@
   "engines": {
     "node": ">=8.0.0"
   },
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "test": "npm run lint && mocha",
     "lint": "eslint --fix ./lib"
@@ -35,13 +38,10 @@
   },
   "peerDependencies": {
     "bcrypt": "^1.0.0",
-    "bcryptjs": "^2.4.0"
-  },
-  "optionalDependencies": {
+    "bcryptjs": "^2.4.0",
     "ioredis": "^4.14.0"
   },
   "dependencies": {
-    "debug": "^4.1.1",
-    "fakeredis": "^2.0.0"
+    "debug": "^4.1.1"
   }
 }
