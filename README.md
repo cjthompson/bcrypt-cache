@@ -35,7 +35,7 @@ const bcryptCache = new BcryptCache(cache);
 
 async function verifyApiToken (req, res, next) {
   // Get the plain text token passed in by the user
-  const token = req.headers['X-API-TOKEN];
+  const token = req.headers['X-API-TOKEN'];
   // Get the hashed token
   const hashedToken = req.user.apiSecretToken;
   // Compare the plain text to the bcrypt hash
@@ -102,14 +102,14 @@ DEBUG='bcrypt-cache:*'
 ```
 
 # Change Log
-##v2.0.0:
+### v2.0.0:
 * Refactor to split the BcryptCache module to only expose `compare` function.
 * Pass a cache instance into the BcryptCache constructor
 * `bcrypt` and `bcryptjs` are now peerDependency
 * Requires node v8 or higher
 
-##v1.1.0:
+### v1.1.0:
 * Update depdendencies due to vulnerabilities reported by GitHub/npm
 
-##v1.0.0:
+### v1.0.0:
 * Initial release
