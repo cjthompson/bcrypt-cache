@@ -102,14 +102,14 @@ DEBUG='bcrypt-cache:*'
 ```
 
 # Change Log
-##v2.0.0:
+### v2.0.0:
 * Refactor to split the BcryptCache module to only expose `compare` function.
 * Pass a cache instance into the BcryptCache constructor
 * `bcrypt` and `bcryptjs` are now peerDependency
 * Requires node v8 or higher
 
-##v1.1.0:
+### v1.1.0:
 * Update depdendencies due to vulnerabilities reported by GitHub/npm
 
-##v1.0.0:
+### v1.0.0:
 * Initial release
